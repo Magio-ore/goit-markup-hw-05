@@ -188,6 +188,8 @@ img{
     background-repeat: no-repeat;   
     background-position: center; 
     background-size: cover; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-text{
@@ -340,11 +342,11 @@ img{
     gap: 24px;
     margin-top: auto;
     justify-content: center;
+    margin-top: 8px;
 }
 .our-team-links-panel{
     width: 40px;
     height: 40px;
-    margin-top: 8px;
 }
 
 .our-team-link{
@@ -553,4 +555,114 @@ img{
     background-color: #31d0aa;
 }
 
+.subscribe-label{
+    display: flex;
+}
+
+.subscribe-text{
+    color: #FFFFFF;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.subscribe-email-input{
+    background-color: #2e2f42;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-right: 24px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    color: white;
+    padding: 8px 16px;
+}
+
+.subscribe-email-input::placeholder{
+    letter-spacing: 0.04em;
+    color: white;
+}
+
+.subscribe-button{
+    background-color: #4d5ae5;
+    gap: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.subscribe-button:hover {
+    background-color: #404bbf;
+}
+.subscribe-button:focus {
+    background-color: #404bbf;
+}
 /* Footer - End */
+
+/* Modal window - Start */
+
+.modal-window{
+    position: fixed;
+    background-color: rgba(46, 47, 66, 0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-window-wrapper{
+    position: relative;
+    width: 408px;
+    height: 80%;
+    max-height: 584px;
+    padding: 24px;
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    overflow: auto;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-window-close-btn{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.modal-window-close-btn:hover{
+    stroke: #404bbf;
+}
+
+.modal-window-form {
+    max-width: 360px;
+    width: 100%;
+    padding-top: 48px;
+    margin: 0 auto;
+    display: block;
+}
+
+.modal-window-title {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    font-weight: 500;
+    font-size: 16px;
+}
