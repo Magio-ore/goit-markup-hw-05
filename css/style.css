@@ -557,6 +557,7 @@ img{
 
 .subscribe-label-form{
     display: flex;
+    gap: 24px;
 }
 
 .subscribe-text{
@@ -643,6 +644,7 @@ img{
 
     opacity: 0;
     pointer-events: none;
+    z-index: 9999;
 }
 
 .modal-window-wrapper{
@@ -651,6 +653,7 @@ img{
     min-height: 584px;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     padding: 72px 24px 24px 24px;
     background-color: #fcfcfc;
     border-radius: 4px;
@@ -820,7 +823,7 @@ img{
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#field-privacy:checked ~ .form-label-checkbox > .form-custom-checkbox{
+#user-privacy:checked ~ .form-label-checkbox > .form-custom-checkbox{
     background-color: #404bbf;
     border: none;
     fill:#F4F4FD;
